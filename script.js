@@ -23,7 +23,7 @@ const winConditions = [
 
 
 cells.forEach((cell, index) => {
-    cell.addEventListener('click', () => tapCell)
+    cell.addEventListener('click', () => tapCell(cell, index))
 })
 
 function tapCell(cell, index) {
